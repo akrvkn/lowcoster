@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html class='locale-en'>
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width'>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <meta name="format-detection" content="telephone=no">
+    <!-- For old IEs -->
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- For new browsers multisize ico  -->
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="favicon.ico">
+
+    <!-- Chrome for Android -->
+    <link rel="icon" sizes="192x192" href="favicon-192.png">
+
+    <!-- For iPhone 6+ downscaled for other devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180-precomposed.png">
+
+    <!-- For IE10 Metro -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="favicon-144-precomposed.png">
+
+    <title>Конструктор речных круизов</title>
+
+    <link rel='stylesheet' href='css/vendor.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i|Roboto:400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic'>
+    <link rel='stylesheet' href='css/common.css'>
+    <link rel='stylesheet' href='css/custom.css'>
+    <link rel='stylesheet' href='js/DataTables-1.10.16/css/jquery.dataTables.css'>
+
+    <script src='js/moment-with-locales.min.js'></script>
+    <script src='js/vendor.js'></script>
+    <script src='js/lib.js'></script>
+    <script src='js/common.js'></script>
+    <script src='js/DataTables-1.10.16/js/jquery.dataTables.js'></script>
+    <script src='js/rivercruises.js'></script>
+</head>
+<body class='body'>
+<div class='body__wrapper'>
+
+
+
+    <header id='supertop' class='header block'>
+        <div class='header__wrapper block__wrapper'>
+            <div class='header__cols'>
+                <div class='header__cols-left'>
+                    <div js-open-menu class='header__menu'></div>
+                    <div class='header__logo_vertical header__logo'>
+                        <a js-scrollto data-scrollto='#supertop' href=''>
+                            <img src='images/logo-vertical-ru.png' alt=''>
+                        </a>
+                    </div>
+                </div>
+                <div class='header__cols-center'>
+                    <div class='header__nav'>
+
+                        <nav class='nav'>
+                            <div class='nav__list'>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_path' href='#' class='nav__link'>ITINERARIES</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_placement' href='#' class='nav__link'>ACCOMMODATION</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_food' href='#' class='nav__link'>MEALS</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_excursion' href='#' class='nav__link'>EXCURSIONS</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_entertainment' href='#' class='nav__link'>ACTIVITIES</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class='header__cols-right'>
+                    <div class='header__lang'>
+                        <div js-lang class='lang'>
+                            <div js-lang-trigger class='lang__current'>en</div>
+                            <div class='lang__list'>
+                                <a href='en' class='lang__item_current lang__item lang__list-item'>en</a>
+                                <a href='/' class='lang__item lang__list-item'>ru</a>
+                                <!--<a href='ch' class='lang__item lang__list-item'>ch</a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class='header__contacts'>
+                        <div class='contacts'>
+                            <div class='contacts__list'>
+                                <div class='contacts__item contacts__list-item'>
+                                    <a href='tel:+7 (495) 22-17-222' class='contacts__link_icon_phone contacts__link_icon contacts__link'><u>+7 (495) 22-17-222</u></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div js-open-menu class='header__menu'></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div js-header-fixed class='header_fixed header block'>
+        <div class='header__wrapper block__wrapper'>
+            <div class='header__cols'>
+                <div class='header__cols-left'>
+                    <div js-open-menu class='header__menu'></div>
+                    <div class='header__logo_vertical header__logo'>
+                        <a js-scrollto data-scrollto='#supertop' href=''>
+                            <img src='images/logo-horizontal-ru.svg' alt=''>
+                        </a>
+                    </div>
+                </div>
+                <div class='header__cols-center'>
+                    <div class='header__nav_fixed header__nav'>
+
+                        <nav class='nav'>
+                            <div class='nav__list'>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_path' href='#' class='nav__link'>ITINERARIES</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_placement' href='#' class='nav__link'>ACCOMMODATION</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_food' href='#' class='nav__link'>MEALS</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_excursion' href='#' class='nav__link'>EXCURSIONS</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_entertainment' href='#' class='nav__link'>ACTIVITIES</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class='header__cols-right'>
+                    <div class='header__lang'>
+                        <div js-lang class='lang'>
+                                                        <div js-lang-trigger class='lang__current'>en</div>
+        <div class='lang__list'>
+            <a href='en' class='lang__item_current lang__item lang__list-item'>en</a>
+                        <a href='/' class='lang__item lang__list-item'>ru</a>
+                        <!--<a href='ch' class='lang__item lang__list-item'>ch</a>-->
+                </div>
+    </div>
+                    </div>
+                    <div class='header__actions'>
+                        <button class='header__action button' js-open-reg><span>IT’S TIME FOR A CRUISE</span></button>
+                    </div>
+                    <div js-open-menu class='header__menu'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='display-none'>
+        <div class='modal modal_menu'>
+            <div class='modal__content'>
+                <div class='menu'>
+                    <div class='menu__logo'>
+                        <a js-scrollto data-scrollto='#supertop' href=''>
+                            <img src='images/logo-vertical-ru.png' alt=''>
+                        </a>
+                    </div>
+                    <div class='menu__nav'>
+
+                        <nav class='nav'>
+                            <div class='nav__list'>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_path' href='#' class='nav__link'>ITINERARIES</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_placement' href='#' class='nav__link'>ACCOMMODATION</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_food' href='#' class='nav__link'>MEALS</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_excursion' href='#' class='nav__link'>EXCURSIONS</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_entertainment' href='#' class='nav__link'>ACTIVITIES</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class='menu__socials'>
+                        <div class='socials'>
+                            <div class='socials__list'>
+                                <div class='socials__item'>
+                                    <a target='_blank' href='https://www.facebook.com/mosturflot' class='socials__link'>facebook</a>
+                                </div>
+                                <div class='socials__item'>
+                                    <a target='_blank' href='https://vk.com/mosturflot' class='socials__link'>vkontakte</a>
+                                </div>
+                                <div class='socials__item'>
+                                    <a target='_blank' href='https://www.instagram.com/mosturflot' class='socials__link'>instagram</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='menu__contacts'>
+                        <div class='contacts'>
+                            <div class='contacts__list'>
+                                <div class='contacts__item contacts__list-item'>
+                                    <a href='tel:+7 (495) 22-17-222' class='contacts__link_icon_phone contacts__link_icon contacts__link'><u>+7 (495) 22-17-222</u></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div js-intro class='intro block'>
+        <div class='intro__wrapper block__wrapper'>
+            <div class='intro__header'>
+                <h1 class='intro__title'>Cruise Build-Up Kit</h1>
+                <div class='intro__subtitle'>A new outlook on river cruises</div>
+            </div>
+            <div class='intro__socials'>
+                <div class='socials'>
+                    <div class='socials__list'>
+                        <div class='socials__item'>
+                            <a target='_blank' href='https://www.facebook.com/mosturflot' class='socials__link'>facebook</a>
+                        </div>
+                        <div class='socials__item'>
+                            <a target='_blank' href='https://vk.com/mosturflot' class='socials__link'>vkontakte</a>
+                        </div>
+                        <div class='socials__item'>
+                            <a target='_blank' href='https://www.instagram.com/mosturflot' class='socials__link'>instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='intro__actions'>
+                <button class='intro__action button_bd-opacity_30 button_big button' js-open-reg><span>IT’S TIME FOR A CRUISE</span></button>
+            </div>
+        </div>
+        <div class='intro__bg'>
+            <div class='intro__bg-ship'>
+                <div class='intro__bg-ship-price'>
+                    <div class='intro__bg-ship-price-tag'></div>
+                </div>
+            </div>
+            <div class='intro__bg-back'>
+                <div class='intro__bg-back-item_10 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_11 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_12 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_13 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_14 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_15 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_16 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_17 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_19 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_18 intro__bg-back-item'></div>
+            </div>
+            <div class='intro__bg-river'></div>
+        </div>
+    </div>
+    <div data-scrollhash='start' js-start class='start block'>
+        <div class='start__wrapper block__wrapper'>
+            <div class='start__content'>
+                <h2 class='start__title'>Put together your own dream cruise</h2>
+                <div class='start__subtitle'>with our new river cruise build-up kit by Mosturflot</div>
+                <div class='start__descr'>
+                    <p>Select only the services that you need. Don’t pay for a TV set if you do not watch TV. Like to wander the streets on your own? Remove excursions from the service list. As for the rest, the comfort level and the breathtaking destinations of an all-inclusive river cruise package remain the same.</p>
+                </div>
+                <div class='start__kit'>
+                    <div class='kit'>
+                        <div class='kit__list'>
+                            <div class='kit__list-wrapper'>
+                                <div class='kit__list-item kit-item_type_path kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/path.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>ITINERARIES</div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_plus kit-item'>
+                                    <div class='kit-item__icon'></div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_placement kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/placement.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>ACCOMMODATION</div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_plus kit-item'>
+                                    <div class='kit-item__icon'></div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_food kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/food@2x.png' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>MEALS</div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_plus kit-item'>
+                                    <div class='kit-item__icon'></div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_excursion kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/excursion.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>EXCURSIONS</div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_plus kit-item'>
+                                    <div class='kit-item__icon'></div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_entertainment kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/entertainment.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>ACTIVITIES</div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_equal kit-item'>
+                                    <div class='kit-item__icon'></div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_ship kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/ship.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>your cruise</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='start__bg'>
+            <div js-start-bg-ship class='start__bg-ship'></div>
+            <div class='start__bg-back'></div>
+            <div class='start__bg-river'></div>
+        </div>
+    </div>
+
+
+
+    <div class='sections'>
+        <div js-isinview data-scrollhash='paths' class='section_path section block'>
+            <div class='section__wrapper block__wrapper'>
+                <div class='section__header'>
+                    <div js-kit-stacking class='section__kit_path section__kit'>
+                        <div class='kit_vertical kit'>
+                            <div class='kit__list'>
+                                <div class='kit__list-wrapper'>
+                                    <div class='kit__list-item kit-item_type_path kit-item'>
+                                        <div class='kit-item__icon'>
+                                            <img src='images/kit/path.svg' alt=''>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class='section__title'>ITINERARIES</h2>
+                    <div class='section__texts'>
+                        <div class='section__texts-main'>
+                            <div class='section__descr'>
+                                <p>Select a weekend getaway<br>
+                                    or a family vacation. </p>
+                            </div>
+                        </div>
+                        <div class='section__texts-side'>
+                            <div class='section__subtitle'>Your choice <b>of 16 itineraries</b><br>
+                                Cruise length: <b>3 to 13 days</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='sections__paths paths'>
+            <div class='paths__river'>
+                <div class='paths__river-ship'>
+                    <div class='paths__river-ship-cloud'></div>
+                    <div class='paths__river-ship-cloud'></div>
+                    <div class='paths__river-ship-cloud'></div>
+                </div>
+                <svg id="svg-doc" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" viewBox="0 0 2375 1254"></svg>
+            </div>
+            <div js-isinview data-scrollhash='uglich' class='path_uglich path paths__item block'>
+                <div class='path__bg'></div>
+                <div class='path__wrapper block__wrapper'>
+                    <div class='path__header'>
+                        <div class='path__suptitle'>3 days</div>
+                        <h3 class='path__title'>Uglich</h3>
+                        <div class='path__descr'>
+                            <div class='qtip-main'>
+                                <div class='qtip-content'>
+                                    <p>During a 3-4 day cruise you can visit the following cities: <b>Uglich, Myshkin, Tver, Dubna.</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div js-isinview data-scrollhash='nijni' class='path_nijni path paths__item block'>
+                <div class='path__bg'></div>
+                <div class='path__wrapper block__wrapper'>
+                    <div class='path__header'>
+                        <div class='path__suptitle'>7 days</div>
+                        <h3 class='path__title'>Nizhny Novgorod</h3>
+                        <div class='path__descr'>
+                            <div class='qtip-main'>
+                                <div class='qtip-content'>
+                                    <p>You can add <b>Nizhny Novgorod, Yaroslavl, Plyos, Rybinsk, Kostroma</b> to your list of stops if you are taking a 7-9 day cruise.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div js-isinview data-scrollhash='kiji' class='path_kiji path paths__item block'>
+                <div class='path__bg'></div>
+                <div class='path__wrapper block__wrapper'>
+                    <div class='path__header'>
+                        <div class='path__suptitle'>13 days</div>
+                        <h3 class='path__title'>Kizhi</h3>
+                        <div class='path__descr'>
+                            <div class='qtip-main'>
+                                <div class='qtip-content'>
+                                    <p>An 11-13 days cruise is a real river adventure with <b>Kizhi, Saint-Petersburg, Valaam, Mandrogi, Pellotsari, Petrozavodsk</b> on your way if you travel North. You can visit <b>Kazan, Cheboksary, Tolyatti, Bolgary, Elabuga</b> and other beautiful cities if you head East.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div js-isinview data-scrollhash='placement' class='section_placement section block'>
+            <div class='section__wrapper block__wrapper'>
+                <div class='section__header'>
+                    <div js-kit-stacking class='section__kit_placement section__kit'>
+                        <div class='kit_vertical kit'>
+                            <div class='kit__list'>
+                                <div class='kit__list-wrapper'>
+                                    <div class='kit__list-item kit-item_type_plus kit-item'>
+                                        <div class='kit-item__icon'></div>
+                                    </div>
+                                    <div class='kit__list-item kit-item_type_placement kit-item'>
+                                        <div class='kit-item__icon'>
+                                            <img src='images/kit/placement.svg' alt=''>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class='section__title'>ACCOMMODATION</h2>
+                    <div class='section__texts'>
+                        <div class='section__texts-main'>
+                            <div class='section__descr'>
+                                <p>Choose one of the two cruise ships – <i>Nikolay Karamzin</i> or <i>Ivan Krylov</i> and then pick up the best cabin type.</p>
+                            </div>
+                        </div>
+                        <div class='section__texts-side'>
+                            <div class='section__subtitle'>Accommodations starting <br><b>at 2330 rubles per day</b></div>
+                        </div>
+                    </div>
+                </div>
+                <div class='section__info'>
+                    <div class='info'>
+                        <div class='info__list'>
+                            <div class='info-item info__list-item'>
+                                <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/circle-yellow.svg' alt=''></i><span class='info-item__title-text'>Standard</span></h3>
+                                <div js-info-item-descr class='info-item__descr'>
+                                    <p>1-, 2-, 3- and 4-berth cabinswith single beds, a refrigerator*, a TV set and a hairdryer<br><hr>*Except for several cabins at Ivan Krylov cruise ship</p>
+                                </div>
+                            </div>
+                            <div class='info-item info__list-item'>
+                                <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/circle-purple.svg' alt=''></i><span class='info-item__title-text'>Semi-Suites</span></h3>
+                                <div js-info-item-descr class='info-item__descr'>
+                                    <p>Cabins with a double bed, a refrigerator, a TV set and a hairdryer.</p>
+                                </div>
+                            </div>
+                            <div class='info-item info__list-item'>
+                                <h3 js-info-item-title class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/circle-green.svg' alt=''></i><span class='info-item__title-text'>Suites</span></h3>
+                                <div js-info-item-descr class='info-item__descr'>
+                                    <p>Spacious two-room cabins with a bed, a sofa, a kitchenette, a TV set, a hairdryer and other amenities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div js-isinview data-scrollhash='food' class='section_food section block'>
+            <div class='section__wrapper block__wrapper'>
+                <div class='section__header'>
+                    <div js-kit-stacking class='section__kit_food section__kit'>
+                        <div class='kit_vertical kit'>
+                            <div class='kit__list'>
+                                <div class='kit__list-wrapper'>
+                                    <div class='kit__list-item kit-item_type_plus kit-item'>
+                                        <div class='kit-item__icon'></div>
+                                    </div>
+                                    <div class='kit__list-item kit-item_type_food kit-item'>
+                                        <div class='kit-item__icon'>
+                                            <img src='images/kit/food@2x.png' alt=''>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class='section__title'>MEALS</h2>
+                    <div class='section__texts'>
+                        <div class='section__texts-main'>
+                            <div class='section__descr'>
+                                <p>You can pick up a tour with no meals, include breakfasts, lunches and dinners in your package or visit onboard cafeterias and bars.</p>
+                            </div>
+                        </div>
+                        <div class='section__texts-side'>
+                            <div class='section__subtitle'>Coffee as low as <b>120 rubles</b> at the <b>bar</b>.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class='section__info'>
+                    <div class='info'>
+                        <div class='info__list'>
+                            <div class='info-item info__list-item'>
+                                <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon_no-food info-item__icon'><img src='images/info/no-food@2x.png' alt=''></i><span class='info-item__title-text'>No meals</span></h3>
+                                <div class='info-item__descr'>
+                                    <p>You can indulge yourself in local food tastings at the destination points or choose your meals on an only if-necessary-basis.</p>
+                                </div>
+                            </div>
+                            <div class='info-item info__list-item'>
+                                <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/breakfast.svg' alt=''></i><span class='info-item__title-text'>Breakfast</span></h3>
+                                <div class='info-item__descr'>
+                                    <p>A breakfast buffet is served every morning to help you start your day with a bang.</p>
+                                </div>
+                            </div>
+                            <div class='info-item info__list-item'>
+                                <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/pansion-half.svg' alt=''></i><span class='info-item__title-text'>Half Board</span></h3>
+                                <div class='info-item__descr'>
+                                    <p>Include breakfasts and dinners in your cruise package in advance to keep up with your regular meal plans.</p>
+                                </div>
+                            </div>
+                            <div class='info-item info__list-item'>
+                                <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/pansion-full.svg' alt=''></i><span class='info-item__title-text'>Full Board</span></h3>
+                                <div class='info-item__descr'>
+                                    <p>No need to worry about your meals: just take a seat at your personal table already set for breakfast, lunch or dinner.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div js-isinview data-scrollhash='excursion' class='section_excursion section block'>
+            <div class='section__wrapper block__wrapper'>
+                <div class='section__header'>
+                    <div js-kit-stacking class='section__kit_excursion section__kit'>
+                        <div class='kit_vertical kit'>
+                            <div class='kit__list'>
+                                <div class='kit__list-wrapper'>
+                                    <div class='kit__list-item kit-item_type_plus kit-item'>
+                                        <div class='kit-item__icon'></div>
+                                    </div>
+                                    <div class='kit__list-item kit-item_type_excursion kit-item'>
+                                        <div class='kit-item__icon'>
+                                            <img src='images/kit/excursion.svg' alt=''>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class='section__title'>EXCURSIONS</h2>
+                    <div class='section__texts'>
+                        <div class='section__texts-main'>
+                            <div class='section__descr'>
+                                <p>Explore the tour cities on your own or select excursions by professional guides – it’s for you to decide on spot or at any appropriate time.</p>
+                            </div>
+                        </div>
+                        <div class='section__texts-side'>
+                            <div class='section__subtitle'>Prices for <b>onshore excursions</b> starting at only <b>250 RUBLES</b>.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class='section__info'>
+                    <div class='section__info-left'>
+                        <div class='info'>
+                            <div class='info__list'>
+                                <div class='info-item info__list-item'>
+                                    <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/excursion.svg' alt=''></i><span class='info-item__title-text'>Sightseeing tours</span></h3>
+                                    <div class='info-item__descr'>
+                                        <p>An introduction to the history, architecture and
+                                            the main landmarks of the city on your itinerary whether on foot or by bus.</p>
+                                    </div>
+                                </div>
+                                <div class='info-item info__list-item'>
+                                    <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/eco.svg' alt=''></i><span class='info-item__title-text'>Eco Trails</span></h3>
+                                    <div class='info-item__descr'>
+                                        <p>Learn more about eco-farms, wild-life preserves and zoos, buy some traditional souvenirs and natural products on site.</p>
+                                    </div>
+                                </div>
+                                <div class='info-item info__list-item'>
+                                    <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon_museum info-item__icon'><img src='images/info/museum@2x.png' alt=''></i><span class='info-item__title-text'>Museum and Workshop Tours</span></h3>
+                                    <div class='info-item__descr'>
+                                        <p>Check the collections of masterpieces at the best museums, art galleries and workshops.</p>
+                                    </div>
+                                </div>
+                                <div class='info-item info__list-item'>
+                                    <div class='info-item__descr'>
+                                        <p>And 30 more excursions are available on request.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='section__info-right'>
+                        <div js-polaroid class='section__polaroid polaroid'>
+                            <div class='polaroid__wrapper'>
+                                <div class='polaroid__frames'>
+                                    <div js-polaroid-frames-item class='polaroid__frames-item_active polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/4/6/6/4/0/466406e005c717805711fa8a8f2af298180c3565.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Kalyazin Town</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class='polaroid__frames-item_second polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/4/0/f/5/e/40f5e5537075c604ce8385bcf4a5126f6b67172f.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Bolgary Town, Tatarstan</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class='polaroid__frames-item_third polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/e/4/3/7/8/e43783f3c811e35b453a9dbbd2eb27d81966ab60.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Valaam Island, Lake Ladoga</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/3/c/b/1/c/3cb1c1c6a49f08b82f83ef36bcb341fd06ed8a05.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Kizhy</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/a/2/a/6/5/a2a658550ed86d76482a783300c90ca5d44b2ff5.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Kizhi Cemetary</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/5/8/9/d/c/589dc3c0507bb6b7325f9c29a4e85b3e7c3c1b7c.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Kirillo-Belozersky Monastery, Kirillov Town</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/9/b/b/7/f/9bb7f87b892469b34beee9bf4a05f342369185a7.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Kirillo-Belozersky Monastery, Kirillov Town</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/4/2/0/f/4/420f41ebe82eb41a914e0690f6332da687dcab83.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Kostroma</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/f/a/b/0/2/fab02357c868d1c8c0683185a815536883325435.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Makaryev</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/7/a/6/d/1/7a6d1d16317ceba5bf2127acf6433a325ff1b00c.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Деревня Мандроги</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/f/d/b/c/c/fdbcc7f99e61044a289b45bbf7e0047505e2afb8.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Mandrogi Village</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/d/6/a/9/7/d6a97a2b6b9fa2d97f3cbcbaff57e29db155838b.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Plyos</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/3/3/f/4/7/33f47a04fa630b2a320481ccd4c5e76bfa664830.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Kalyazin</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/e/4/c/0/2/e4c02dcdf5bac9bf5f730a10215f8cdba8158fef.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Rybinsk</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/e/e/3/8/5/ee38544e7d42a558fe3bf4741fbe912865611688.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Sortavala</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/f/a/9/d/7/fa9d7c7b5d0d26b51df9e8e412b8f433cc400943.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Kazan</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/1/7/8/9/c/1789c64db266b7472c19a842f27696542c2c0f1a.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Eco Farms</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/6/9/4/2/3/6942308d5d454089d65add282f56e8db0d85792f.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>The Moscow Channel</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/1/2/d/0/5/12d05bde5932b2cc0f98b50ad58943d6c3534fcc.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>The Moscow Channel</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/4/7/6/d/3/476d30b514f053af440cf3826961b5c92f42c411.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Углич</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/1/2/8/2/2/12822272b4d7e6ba66403527121455248126808a.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Uglich</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/7/c/6/0/0/7c600a374c347b7c44c10feaa90bfdcf850b345e.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Nizhny Novgorod</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/d/a/c/5/5/dac553c65d18ee35a944ca3c1d664e81e22490cc.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Saint Petersburg</div>
+                                    </div>
+                                </div>
+                                <div class='polaroid__nav'>
+                                    <div js-polaroid-nav-prev class='polaroid__nav-prev'></div>
+                                    <div js-polaroid-nav-count class='polaroid__nav-count'>prev</div>
+                                    <div js-polaroid-nav-next class='polaroid__nav-next'></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div js-isinview data-scrollhash='entertainment' class='section_entertainment section block'>
+            <div class='section__wrapper block__wrapper'>
+                <div class='section__header'>
+                    <div js-kit-stacking class='section__kit_entertainment section__kit'>
+                        <div class='kit_vertical kit'>
+                            <div class='kit__list'>
+                                <div class='kit__list-wrapper'>
+                                    <div class='kit__list-item kit-item_type_plus kit-item'>
+                                        <div class='kit-item__icon'></div>
+                                    </div>
+                                    <div class='kit__list-item kit-item_type_entertainment kit-item'>
+                                        <div class='kit-item__icon'>
+                                            <img src='images/kit/entertainment.svg' alt=''>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class='section__title'>ACTIVITIES</h2>
+                    <div class='section__texts'>
+                        <div class='section__texts-main'>
+                            <div class='section__descr'>
+                                <p>Use our fitness equipment, read books from our onboard library, dance, watch movies under the stars, participate in our quests and trivia shows.
+                                </p>
+                            </div>
+                        </div>
+                        <div class='section__texts-side'>
+                            <div class='section__subtitle'><b>And all this is completely free-of-charge!</b></div>
+                        </div>
+                    </div>
+                </div>
+                <div class='section__info'>
+                    <div class='info'>
+                        <div class='info__list'>
+                            <div js-info-item-tooltip class='info-item info__list-item'>
+                                <h3 js-info-item-title class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/kids.svg' alt=''></i><span class='info-item__title-text'>Kids Club</span></h3>
+                            </div>
+                            <div js-info-item-tooltip class='info-item info__list-item'>
+                                <h3 js-info-item-title class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/fitness.svg' alt=''></i><span class='info-item__title-text'>Fitness Center</span></h3>
+                            </div>
+                            <div js-info-item-tooltip class='info-item info__list-item'>
+                                <h3 js-info-item-title class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/stars@2x.png' alt=''></i><span class='info-item__title-text'>Starry Sky Cruises Program</span></h3>
+                                <div js-info-item-descr class='info-item__descr'>
+                                    <p>Starry Sky Cruises is a unique chance to talk with
+                                        professional astronomers, representatives of the State Space Corporation ROSCOSMOS and meet real cosmonauts to go beyond the limits of Earth, to learn more about the solar system, to find and identify constellations. This exclusive Mosturflot project is for all age groups.</p>
+                                </div>
+                            </div>
+                            <div js-info-item-tooltip class='info-item info__list-item'>
+                                <h3 js-info-item-title class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/disco.svg' alt=''></i><span class='info-item__title-text'>Disco</span></h3>
+                            </div>
+                            <div js-info-item-tooltip class='info-item info__list-item'>
+                                <h3 js-info-item-title class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/film.svg' alt=''></i><span class='info-item__title-text'>Movies under the stars</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div js-isinview data-scrollhash='constructor' js-constructor class='constructor block'>
+        <div class='constructor__wrapper block__wrapper'>
+            <div class='constructor__header'>
+                <h2 class='constructor__title'>Cruise kit</h2>
+                <div class='constructor__subtitle'>Select the appropriate options and get a cruise price quotation*</div>
+            </div>
+            <div class='constructor-options constructor__options'>
+                <div class='constructor-options__list'>
+
+                    <!-- ships -->
+                    <form id="flotSU">
+                        <div class='constructor-option constructor-options__list-item'>
+                            <div class='constructor-option__type'>
+                                <div class='constructor-option__type-kit'>
+                                    <div class='kit-item_size_big kit-item_type_placement kit-item'>
+                                        <div class='kit-item__icon'>
+                                            <img src='images/kit/ship.svg' alt=''>
+                                        </div>
+                                        <div class='kit-item__title'>Cruise Ship</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='constructor-option__list'>
+
+                                <div class='constructor-option__list-item'>
+                                    <label class='constructor-option__variant radio'>
+                                        <input value='1' checked type='radio' name='ships' class='radio__input ship1'>
+                                        <span class='radio__fake'></span>
+                                        <span class='radio__text'>Nikolay Karamzin</span>
+                                    </label>
+                                </div>
+                                <div class='constructor-option__list-item'>
+                                    <label class='constructor-option__variant radio'>
+                                        <input value='2' type='radio' name='ships' class='radio__input ship2'>
+                                        <span class='radio__fake'></span>
+                                        <span class='radio__text'>Ivan Krylov</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- end ships -->
+
+
+                    <div class='constructor-option constructor-options__list-item'>
+                        <div class='constructor-option__type'>
+                            <div class='constructor-option__type-kit'>
+                                <div class='kit-item_size_big kit-item_type_path kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/path.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>ITINERARIES</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='constructor-option__list'>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='3' checked js-constructor-option-input type='radio' name='constructor[time]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>3 days</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='7' js-constructor-option-input type='radio' name='constructor[time]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>7 days</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='13' js-constructor-option-input type='radio' name='constructor[time]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>13 days</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='constructor-option constructor-options__list-item'>
+                        <div class='constructor-option__type'>
+                            <div class='constructor-option__type-kit'>
+                                <div class='kit-item_size_big kit-item_type_placement kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/placement.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>ACCOMMODATION</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='constructor-option__list'>
+
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='2330' checked js-constructor-option-input type='radio' name='constructor[placement]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Standard</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='7000' js-constructor-option-input type='radio' name='constructor[placement]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Semi-Suites</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='7500' js-constructor-option-input type='radio' name='constructor[placement]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Suites</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='constructor-option constructor-options__list-item'>
+                        <div class='constructor-option__type'>
+                            <div class='constructor-option__type-kit'>
+                                <div class='kit-item_size_big kit-item_type_food kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/food@2x.png' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>MEALS</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='constructor-option__list'>
+                            <div class='constructor-option__list-item zero-meal'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='0' checked js-constructor-option-input type='radio' name='constructor[food]' class='radio__input food-none'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>No meals</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='150' js-constructor-option-input type='radio' name='constructor[food]' class='radio__input food-one'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Breakfast</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='450' js-constructor-option-input type='radio' name='constructor[food]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Half Board</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='850' js-constructor-option-input type='radio' name='constructor[food]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Full Board</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='constructor-option constructor-options__list-item'>
+                        <div class='constructor-option__type'>
+                            <div class='constructor-option__type-kit'>
+                                <div class='kit-item_size_big kit-item_type_excursion kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/excursion.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>EXCURSIONS</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='constructor-option__list'>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='0' js-constructor-option-input type='radio' name='constructor[excursion]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>No excursions</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input checked value='150' js-constructor-option-input type='radio' name='constructor[excursion]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Selected excursions</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='300' js-constructor-option-input type='radio' name='constructor[excursion]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Full excursions package</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='constructor-options__actions'>
+                    <div class='constructor-options__actions-left'>
+                        <div class='constructor-options__actions-book'>
+                            <div class='constructor-book'>
+                                <h3 class='constructor-book__title'>To book a cruise</h3>
+                                <div class='constructor-book__descr'>
+                                    <p>Visit our main website to book a cruise online. You can view tour descriptions and select all needed services.</p>
+                                </div>
+                                <div class='constructor-book__actions'>
+                                    <a class='constructor-book__action button_bd-opacity_30 button' href='https://booking.mosturflot.ru/rivercruises/tours?language=en-US'><span>Proceed to booking</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='constructor-options__actions-right'>
+                        <div class='constructor-options__actions-buy'>
+                            <div class='constructor-buy'>
+                                <h3 class='constructor-buy__title'>* Cruise packages start from <span class='constructor-buy__title-price constructor-buy__price' js-constructor-price><b class='constructor-buy__price-sum'><span class='constructor-buy__price-current'>12500</span><span class='constructor-buy__price-new'>12500</span></b> rubles</span></h3>
+                                <div class='constructor-buy__actions'>
+                                    <div class='constructor-buy__actions-row'>
+                                        <button js-open-reg class='constructor-buy__action button_bd-opacity_30 button_medium button_green button'><span>Receive a 3% discount</span></button>
+                                        <div class='constructor-buy__action-descr'>This discount is not cumulative with your loyalty card.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class='display-none'>
+        <div class='modal_reg modal'>
+            <div class='modal__title'>Ready to set sail!</div>
+            <div class='modal__content'>
+                <form novalidate action='https://script.google.com/macros/s/AKfycbx-ZFAX5-GvcORUHKHeTmgqYnpfWxOj3lzLjzxFzvn5jfQqINRW/exec' method="post" autocomplete="off" class='reg-form'>
+                    <div class='reg-form__descr'>
+                        <p>Please send your contact information to receive a 3% discount!</p>
+                    </div>
+                    <div class='reg-form__fields'>
+                        <label class='input'>
+                            <span class='input__label'>First Name & Last Name</span>
+                            <span class='input__field'>
+                            <input type='text' id='name' name='name' placeholder='' class='input__field-self'>
+                        </span>
+                        </label>
+                        <label class='input'>
+                            <span class='input__label'>Contact phone number</span>
+                            <span class='input__field'>
+                            <input type='tel' id='phone' name='phone' placeholder='' class='input__field-self'>
+                        </span>
+                        </label>
+                        <label class='input'>
+                            <span class='input__label'>E-mail</span>
+                            <span class='input__field'>
+                            <input type='email' id='email' name='email' placeholder='' class='input__field-self'>
+                        </span>
+                        </label>
+                        <label class='checkbox'>
+                            <input checked type='checkbox' id='subscription' name='subscription' class='checkbox__input'>
+                            <span class='checkbox__fake'></span>
+                            <span class='checkbox__text'>Sign up to receive our newsletter</span>
+                        </label>
+                    </div>
+                    <div class='reg-form__actions'>
+                        <input type='tel' name='mobile' id='mobile' placeholder='' class='display-none'>
+
+                        <button type='submit' class='reg-form__action button_bd-opacity_30 button_medium button_green button'><span>SEND</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class='footer block'>
+        <div class='footer__wrapper block__wrapper'>
+            <div class='footer__cols'>
+                <div class='footer__cols-left'>
+                    <div class='footer__copyright'>© 2018 Мостурфлот</div>
+                </div>
+                <div class='footer__cols-center'>
+                    <div class='footer__contacts'>
+                        <div class='contacts'>
+                            <div class='contacts__list'>
+                                <div class='contacts__item contacts__list-item'>
+                                    <a href='tel:+7 (495) 22-17-222' class='contacts__link_icon_phone contacts__link_icon contacts__link'><u>+7 (495) 22-17-222</u></a>
+                                </div>
+                                <div class='contacts__item contacts__list-item'>
+                                    <a href='mailto:info@mosturflot.ru' class='contacts__link_icon_email contacts__link_icon contacts__link'><u>info@mosturflot.ru</u></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='footer__cols-right'>
+                    <a class='' href='https://www.mosturflot.ru'>
+                        <span class='footer-wow__text'>ОАО"МОСТУРФЛОТ"</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+

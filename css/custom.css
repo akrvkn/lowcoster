@@ -1,0 +1,20 @@
+.section_placement .section__info {
+    padding-right: 63.333333333333336%;
+}
+
+.section_placement .section__wrapper{
+    background: url(../images/ship/cabin.png) right 100px bottom -40px no-repeat;
+    padding-bottom: 30px;
+}
+
+.section_placement{-webkit-transition:background .5s .35s ease-out;-moz-transition:background .5s .35s ease-out;-o-transition:background .5s .35s ease-out;-ms-transition:background .5s .35s ease-out;transition:background .5s .35s ease-out}
+@media (max-width:600px){.section_placement{padding-bottom:90px;background:url(../images/ship/cabin.png) center bottom -70px/110% auto no-repeat}}.section_placement .section__wrapper{-webkit-transition:background .5s .35s ease-out;-moz-transition:background .5s .35s ease-out;-o-transition:background .5s .35s ease-out;-ms-transition:background .5s .35s ease-out;transition:background .5s .35s ease-out;background:url(../images/ship/cabin.png) right 100px bottom -40px no-repeat}.section_excursion .section__info-right,.ship__visual{-ms-transition:all .5s .25s ease-out;-webkit-transform:translate(0,500px);-moz-transform:translate(0,500px)}
+@media (max-width:1100px){.section_placement .section__wrapper{-webkit-background-size:50.2% auto;-moz-background-size:50.2% auto;background-size:50.2% auto}}
+@media (max-width:800px){.section_placement .section__wrapper{background-position:center bottom -100px;-webkit-background-size:61.2% auto;-moz-background-size:61.2% auto;background-size:61.2% auto}.section_placement .section__wrapper:after{content:'';display:block;padding-bottom:52.2%}}.section_placement .section__info{padding-right:63.333333333333336%}
+@media (max-width:600px){.section_placement .section__wrapper{background:0 0}.section_placement .section__wrapper:after{padding-bottom:102%}.section_placement.is-inview{background-position:center bottom 70px}}
+.section_placement.is-inview .section__wrapper{background-position:right 100px bottom 10px}
+@media (max-width:800px){.section_placement .section__info{padding-right:0}.section_placement.is-inview .section__wrapper{background-position:center bottom}}
+
+.m-row-days {
+    text-align: center;
+}

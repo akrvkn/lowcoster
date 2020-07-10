@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html class='locale-ru'>
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width'>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <meta name="format-detection" content="telephone=no">
+    <!-- For old IEs -->
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- For new browsers multisize ico  -->
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="favicon.ico">
+
+    <!-- Chrome for Android -->
+    <link rel="icon" sizes="192x192" href="favicon-192.png">
+
+    <!-- For iPhone 6+ downscaled for other devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180-precomposed.png">
+
+    <!-- For IE10 Metro -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="favicon-144-precomposed.png">
+
+    <title>Конструктор речных круизов</title>
+
+    <link rel='stylesheet' href='css/vendor.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i|Roboto:400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic'>
+    <link rel='stylesheet' href='css/common.css'>
+    <link rel='stylesheet' href='css/custom.css'>
+    <link rel='stylesheet' href='js/DataTables-1.10.16/css/jquery.dataTables.css'>
+
+    <script src='js/moment-with-locales.min.js'></script>
+    <script src='js/vendor.js'></script>
+    <script src='js/lib.js'></script>
+    <script src='js/common.js'></script>
+    <script src='js/DataTables-1.10.16/js/jquery.dataTables.js'></script>
+    <script src='js/rivercruises.js'></script>
+</head>
+<body class='body'>
+<div class='body__wrapper'>
+
+
+
+    <header id='supertop' class='header block'>
+        <div class='header__wrapper block__wrapper'>
+            <div class='header__cols'>
+                <div class='header__cols-left'>
+                    <div js-open-menu class='header__menu'></div>
+                    <div class='header__logo_vertical header__logo'>
+                        <a js-scrollto data-scrollto='#supertop' href=''>
+                            <img src='images/logo-vertical-ru.png' alt=''>
+                        </a>
+                    </div>
+                </div>
+                <div class='header__cols-center'>
+                    <div class='header__nav'>
+
+                        <nav class='nav'>
+                            <div class='nav__list'>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_path' href='#' class='nav__link'>МАРШРУТЫ</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_placement' href='#' class='nav__link'>РАЗМЕЩЕНИЕ</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_food' href='#' class='nav__link'>ПИТАНИЕ</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_excursion' href='#' class='nav__link'>ЭКСКУРСИИ</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_entertainment' href='#' class='nav__link'>РАЗВЛЕЧЕНИЯ</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class='header__cols-right'>
+                    <div class='header__lang'>
+                        <div js-lang class='lang'>
+                            <div js-lang-trigger class='lang__current'>ch</div>
+                            <div class='lang__list'>
+                                <a href='ch' class='lang__item_current lang__item lang__list-item'>ch</a>
+                                <a href='en' class='lang__item lang__list-item'>en</a>
+                                <a href='/' class='lang__item lang__list-item'>ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='header__contacts'>
+                        <div class='contacts'>
+                            <div class='contacts__list'>
+                                <div class='contacts__item contacts__list-item'>
+                                    <a href='tel:+7 (495) 22-17-222' class='contacts__link_icon_phone contacts__link_icon contacts__link'><u>+7 (495) 22-17-222</u></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div js-open-menu class='header__menu'></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div js-header-fixed class='header_fixed header block'>
+        <div class='header__wrapper block__wrapper'>
+            <div class='header__cols'>
+                <div class='header__cols-left'>
+                    <div js-open-menu class='header__menu'></div>
+                    <div class='header__logo_vertical header__logo'>
+                        <a js-scrollto data-scrollto='#supertop' href=''>
+                            <img src='images/logo-horizontal-ru.svg' alt=''>
+                        </a>
+                    </div>
+                </div>
+                <div class='header__cols-center'>
+                    <div class='header__nav_fixed header__nav'>
+
+                        <nav class='nav'>
+                            <div class='nav__list'>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_path' href='#' class='nav__link'>МАРШРУТЫ</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_placement' href='#' class='nav__link'>РАЗМЕЩЕНИЕ</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_food' href='#' class='nav__link'>ПИТАНИЕ</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_excursion' href='#' class='nav__link'>ЭКСКУРСИИ</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_entertainment' href='#' class='nav__link'>РАЗВЛЕЧЕНИЯ</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class='header__cols-right'>
+                    <div class='header__lang'>
+                        <div js-lang class='lang'>
+                            <div js-lang-trigger class='lang__current'>ru</div>
+                            <div class='lang__list'>
+                                <a href='ch' class='lang__item_current lang__item lang__list-item'>ch</a>
+                                <a href='en' class='lang__item lang__list-item'>en</a>
+                                <a href='/' class='lang__item lang__list-item'>ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='header__actions'>
+                        <button class='header__action button' js-open-reg><span>ХОЧУ В КРУИЗ</span></button>
+                    </div>
+                    <div js-open-menu class='header__menu'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='display-none'>
+        <div class='modal modal_menu'>
+            <div class='modal__content'>
+                <div class='menu'>
+                    <div class='menu__logo'>
+                        <a js-scrollto data-scrollto='#supertop' href=''>
+                            <img src='images/logo-vertical-ru.png' alt=''>
+                        </a>
+                    </div>
+                    <div class='menu__nav'>
+
+                        <nav class='nav'>
+                            <div class='nav__list'>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_path' href='#' class='nav__link'>МАРШРУТЫ</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_placement' href='#' class='nav__link'>РАЗМЕЩЕНИЕ</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_food' href='#' class='nav__link'>ПИТАНИЕ</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_excursion' href='#' class='nav__link'>ЭКСКУРСИИ</a>
+                                </div>
+                                <div class='nav__item'>
+                                    <a js-scrollto data-scrollto='.section_entertainment' href='#' class='nav__link'>РАЗВЛЕЧЕНИЯ</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class='menu__socials'>
+                        <div class='socials'>
+                            <div class='socials__list'>
+                                <div class='socials__item'>
+                                    <a target='_blank' href='https://www.facebook.com/mosturflot' class='socials__link'>facebook</a>
+                                </div>
+                                <div class='socials__item'>
+                                    <a target='_blank' href='https://vk.com/mosturflot' class='socials__link'>vkontakte</a>
+                                </div>
+                                <div class='socials__item'>
+                                    <a target='_blank' href='https://www.instagram.com/mosturflot' class='socials__link'>instagram</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='menu__contacts'>
+                        <div class='contacts'>
+                            <div class='contacts__list'>
+                                <div class='contacts__item contacts__list-item'>
+                                    <a href='tel:+7 (495) 22-17-222' class='contacts__link_icon_phone contacts__link_icon contacts__link'><u>+7 (495) 22-17-222</u></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div js-intro class='intro block'>
+        <div class='intro__wrapper block__wrapper'>
+            <div class='intro__header'>
+                <h1 class='intro__title'>Конструктор речных круизов</h1>
+                <div class='intro__subtitle'>Новый взгляд на речные круизы</div>
+            </div>
+            <div class='intro__socials'>
+                <div class='socials'>
+                    <div class='socials__list'>
+                        <div class='socials__item'>
+                            <a target='_blank' href='https://www.facebook.com/mosturflot' class='socials__link'>facebook</a>
+                        </div>
+                        <div class='socials__item'>
+                            <a target='_blank' href='https://vk.com/mosturflot' class='socials__link'>vkontakte</a>
+                        </div>
+                        <div class='socials__item'>
+                            <a target='_blank' href='https://www.instagram.com/mosturflot' class='socials__link'>instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='intro__actions'>
+                <button class='intro__action button_bd-opacity_30 button_big button' js-open-reg><span>ХОЧУ В КРУИЗ</span></button>
+            </div>
+        </div>
+        <div class='intro__bg'>
+            <div class='intro__bg-ship'>
+                <div class='intro__bg-ship-price'>
+                    <div class='intro__bg-ship-price-tag'></div>
+                </div>
+            </div>
+            <div class='intro__bg-back'>
+                <div class='intro__bg-back-item_10 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_11 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_12 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_13 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_14 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_15 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_16 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_17 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_19 intro__bg-back-item'></div>
+                <div class='intro__bg-back-item_18 intro__bg-back-item'></div>
+            </div>
+            <div class='intro__bg-river'></div>
+        </div>
+    </div>
+    <div data-scrollhash='start' js-start class='start block'>
+        <div class='start__wrapper block__wrapper'>
+            <div class='start__content'>
+                <h2 class='start__title'>Соберите свой идеальный круиз</h2>
+                <div class='start__subtitle'>с современным конструктором речных круизов от Мостурфлота</div>
+                <div class='start__descr'>
+                    <p>Выбирайте только те&nbsp;услуги, которые вам нужны. Не&nbsp;платите за&nbsp;телевизор, если не&nbsp;смотрите его. Хотите сами гулять по&nbsp;городам? Вычеркните из&nbsp;стоимости экскурсии.В&nbsp;остальном&nbsp;&mdash; это тот&nbsp;же уровень комфорта и&nbsp;те&nbsp;же красивые маршруты, что и&nbsp;при покупке путёвок &laquo;всё включено&raquo;.</p>
+                </div>
+                <div class='start__kit'>
+                    <div class='kit'>
+                        <div class='kit__list'>
+                            <div class='kit__list-wrapper'>
+                                <div class='kit__list-item kit-item_type_path kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/path.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>маршрут</div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_plus kit-item'>
+                                    <div class='kit-item__icon'></div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_placement kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/placement.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>Размещение</div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_plus kit-item'>
+                                    <div class='kit-item__icon'></div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_food kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/food@2x.png' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>Питание</div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_plus kit-item'>
+                                    <div class='kit-item__icon'></div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_excursion kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/excursion.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>Экскурсии</div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_plus kit-item'>
+                                    <div class='kit-item__icon'></div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_entertainment kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/entertainment.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>Развлечения</div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_equal kit-item'>
+                                    <div class='kit-item__icon'></div>
+                                </div>
+                                <div class='kit__list-item kit-item_type_ship kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/ship.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>ваш круиз</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='start__bg'>
+            <div js-start-bg-ship class='start__bg-ship'></div>
+            <div class='start__bg-back'></div>
+            <div class='start__bg-river'></div>
+        </div>
+    </div>
+
+
+
+    <div class='sections'>
+        <div js-isinview data-scrollhash='paths' class='section_path section block'>
+            <div class='section__wrapper block__wrapper'>
+                <div class='section__header'>
+                    <div js-kit-stacking class='section__kit_path section__kit'>
+                        <div class='kit_vertical kit'>
+                            <div class='kit__list'>
+                                <div class='kit__list-wrapper'>
+                                    <div class='kit__list-item kit-item_type_path kit-item'>
+                                        <div class='kit-item__icon'>
+                                            <img src='images/kit/path.svg' alt=''>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class='section__title'>МАРШРУТЫ</h2>
+                    <div class='section__texts'>
+                        <div class='section__texts-main'>
+                            <div class='section__descr'>
+                                <p>Отправляйтесь в короткий круиз на выходные или берите <br>полноценный отпуск всей семьёй.</p>
+                            </div>
+                        </div>
+                        <div class='section__texts-side'>
+                            <div class='section__subtitle'>На&nbsp;выбор&nbsp;&mdash; <b>16&nbsp;маршрутов</b> <br>продолжительностью <b>от&nbsp;3&nbsp;до&nbsp;13&nbsp;дней</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='sections__paths paths'>
+            <div class='paths__river'>
+                <div class='paths__river-ship'>
+                    <div class='paths__river-ship-cloud'></div>
+                    <div class='paths__river-ship-cloud'></div>
+                    <div class='paths__river-ship-cloud'></div>
+                </div>
+                <svg id="svg-doc" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" viewBox="0 0 2375 1254"></svg>
+            </div>
+            <div js-isinview data-scrollhash='uglich' class='path_uglich path paths__item block'>
+                <div class='path__bg'></div>
+                <div class='path__wrapper block__wrapper'>
+                    <div class='path__header'>
+                        <div class='path__suptitle'>3 дня</div>
+                        <h3 class='path__title'>Углич</h3>
+                        <div class='path__descr'>
+                            <div class='qtip-main'>
+                                <div class='qtip-content'>
+                                    <p>За&nbsp;3-4 дня речного круиза можно посетить города: <b>Углич, Мышкин, Тверь, Дубна.</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div js-isinview data-scrollhash='nijni' class='path_nijni path paths__item block'>
+                <div class='path__bg'></div>
+                <div class='path__wrapper block__wrapper'>
+                    <div class='path__header'>
+                        <div class='path__suptitle'>7 дней</div>
+                        <h3 class='path__title'>нижний новгород</h3>
+                        <div class='path__descr'>
+                            <div class='qtip-main'>
+                                <div class='qtip-content'>
+                                    <p>За&nbsp;7-9 дней круиза список городов пополнят <b>Нижний Новгород, Ярославль, Плёс, Рыбинск, Кострома и&nbsp;другие.</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div js-isinview data-scrollhash='kiji' class='path_kiji path paths__item block'>
+                <div class='path__bg'></div>
+                <div class='path__wrapper block__wrapper'>
+                    <div class='path__header'>
+                        <div class='path__suptitle'>13 дней</div>
+                        <h3 class='path__title'>КИЖИ</h3>
+                        <div class='path__descr'>
+                            <div class='qtip-main'>
+                                <div class='qtip-content'>
+                                    <p>11-13 дней&nbsp;&mdash; это настоящее речное путешествие, маршрут которого может проходить через <b>Кижи, Санкт-Петербург, Валаам, Мандроги, Пеллотсари, Петрозаводск&nbsp;</b>&mdash; на&nbsp;севере, а&nbsp;на&nbsp;востоке&nbsp;&mdash; через <b>Казань, Чебоксары, Тольятти, Болгары, Елабугу</b> и&nbsp;другие удивительные места.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div js-isinview data-scrollhash='placement' class='section_placement section block'>
+            <div class='section__wrapper block__wrapper'>
+                <div class='section__header'>
+                    <div js-kit-stacking class='section__kit_placement section__kit'>
+                        <div class='kit_vertical kit'>
+                            <div class='kit__list'>
+                                <div class='kit__list-wrapper'>
+                                    <div class='kit__list-item kit-item_type_plus kit-item'>
+                                        <div class='kit-item__icon'></div>
+                                    </div>
+                                    <div class='kit__list-item kit-item_type_placement kit-item'>
+                                        <div class='kit-item__icon'>
+                                            <img src='images/kit/placement.svg' alt=''>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class='section__title'>РАЗМЕЩЕНИЕ</h2>
+                    <div class='section__texts'>
+                        <div class='section__texts-main'>
+                            <div class='section__descr'>
+                                <p>Выберите один из двух теплоходов - "Николай Карамзин" или "И.А.Крылов" - и подходящую вам каюту.</p>
+                            </div>
+                        </div>
+                        <div class='section__texts-side'>
+                            <div class='section__subtitle'>Стоимость проживания начинается <br><b>от&nbsp;2330 рублей в&nbsp;сутки</b></div>
+                        </div>
+                    </div>
+                </div>
+                <div class='section__info'>
+                    <div class='info'>
+                        <div class='info__list'>
+                            <div class='info-item info__list-item'>
+                                <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/circle-yellow.svg' alt=''></i><span class='info-item__title-text'>Стандарт</span></h3>
+                                <div js-info-item-descr class='info-item__descr'>
+                                    <p>1-, 2-, 3- и 4-местные каюты с односпальными кроватями, холодильником * , телевизором и феном.<br><hr>* за исключением, некоторых кают <br>т/х "И.А. Крылов"</p>
+                                </div>
+                            </div>
+                            <div class='info-item info__list-item'>
+                                <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/circle-purple.svg' alt=''></i><span class='info-item__title-text'>Полулюкс</span></h3>
+                                <div js-info-item-descr class='info-item__descr'>
+                                    <p>Каюты с&nbsp;двуспальной кроватью, холодильником, телевизором и&nbsp;феном.</p>
+                                </div>
+                            </div>
+                            <div class='info-item info__list-item'>
+                                <h3 js-info-item-title class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/circle-green.svg' alt=''></i><span class='info-item__title-text'>Люкс</span></h3>
+                                <div js-info-item-descr class='info-item__descr'>
+                                    <p>Просторные двухкомнатные каюты с&nbsp;кроватью, диваном, кухней, телевизором, феном и&nbsp;другими удобствами.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div js-isinview data-scrollhash='food' class='section_food section block'>
+            <div class='section__wrapper block__wrapper'>
+                <div class='section__header'>
+                    <div js-kit-stacking class='section__kit_food section__kit'>
+                        <div class='kit_vertical kit'>
+                            <div class='kit__list'>
+                                <div class='kit__list-wrapper'>
+                                    <div class='kit__list-item kit-item_type_plus kit-item'>
+                                        <div class='kit-item__icon'></div>
+                                    </div>
+                                    <div class='kit__list-item kit-item_type_food kit-item'>
+                                        <div class='kit-item__icon'>
+                                            <img src='images/kit/food@2x.png' alt=''>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class='section__title'>ПИТАНИЕ</h2>
+                    <div class='section__texts'>
+                        <div class='section__texts-main'>
+                            <div class='section__descr'>
+                                <p>Вы можете выбрать тур без питания или включить в него завтраки, обеды и ужины, а также пользоваться услугами бара на борту.</p>
+                            </div>
+                        </div>
+                        <div class='section__texts-side'>
+                            <div class='section__subtitle'><b>Стоимость</b> кофе в баре <b>120&nbsp;рублей</b></div>
+                        </div>
+                    </div>
+                </div>
+                <div class='section__info'>
+                    <div class='info'>
+                        <div class='info__list'>
+                            <div class='info-item info__list-item'>
+                                <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon_no-food info-item__icon'><img src='images/info/no-food@2x.png' alt=''></i><span class='info-item__title-text'>Без питания</span></h3>
+                                <div class='info-item__descr'>
+                                    <p>Вы можете дегустировать локальную кухню в городах стоянок, а питание на теплоходе приобрести только в те дни, когда это Вам необходимо.</p>
+                                </div>
+                            </div>
+                            <div class='info-item info__list-item'>
+                                <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/breakfast.svg' alt=''></i><span class='info-item__title-text'>Завтрак</span></h3>
+                                <div class='info-item__descr'>
+                                    <p>Комплексные завтраки сервируются к&nbsp;вашему приходу, чтобы каждое утро вы&nbsp;начинали с&nbsp;удовольствием.</p>
+                                </div>
+                            </div>
+                            <div class='info-item info__list-item'>
+                                <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/pansion-half.svg' alt=''></i><span class='info-item__title-text'>Полупансион</span></h3>
+                                <div class='info-item__descr'>
+                                    <p>Включите завтраки, обеды или ужины в тур заранее, чтобы сохранить привычный режим питания.</p>
+                                </div>
+                            </div>
+                            <div class='info-item info__list-item'>
+                                <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/pansion-full.svg' alt=''></i><span class='info-item__title-text'>Полный пансион</span></h3>
+                                <div class='info-item__descr'>
+                                    <p>Не&nbsp;задумывайтесь о&nbsp;питании: просто займите ваш персональный столик, уже сервированный к&nbsp;завтраку, обеду или ужину.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div js-isinview data-scrollhash='excursion' class='section_excursion section block'>
+            <div class='section__wrapper block__wrapper'>
+                <div class='section__header'>
+                    <div js-kit-stacking class='section__kit_excursion section__kit'>
+                        <div class='kit_vertical kit'>
+                            <div class='kit__list'>
+                                <div class='kit__list-wrapper'>
+                                    <div class='kit__list-item kit-item_type_plus kit-item'>
+                                        <div class='kit-item__icon'></div>
+                                    </div>
+                                    <div class='kit__list-item kit-item_type_excursion kit-item'>
+                                        <div class='kit-item__icon'>
+                                            <img src='images/kit/excursion.svg' alt=''>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class='section__title'>Экскурсии</h2>
+                    <div class='section__texts'>
+                        <div class='section__texts-main'>
+                            <div class='section__descr'>
+                                <p>Исследуйте города тура самостоятельно или выбирайте экскурсии с&nbsp;профессиональным гидом&nbsp;&mdash; решайте сразу или в&nbsp;любое время потом.</p>
+                            </div>
+                        </div>
+                        <div class='section__texts-side'>
+                            <div class='section__subtitle'>Цены на&nbsp;<b>береговые экскурсии</b><br>начинаются <b>от&nbsp;250&nbsp;РУБЛЕЙ</b></div>
+                        </div>
+                    </div>
+                </div>
+                <div class='section__info'>
+                    <div class='section__info-left'>
+                        <div class='info'>
+                            <div class='info__list'>
+                                <div class='info-item info__list-item'>
+                                    <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/excursion.svg' alt=''></i><span class='info-item__title-text'>Обзорные экскурсии</span></h3>
+                                    <div class='info-item__descr'>
+                                        <p>Познакомьтесь с&nbsp;историей и&nbsp;архитектурой, а&nbsp;также главными достопримечательностями города&nbsp;&mdash; пешком или на&nbsp;автобусе.</p>
+                                    </div>
+                                </div>
+                                <div class='info-item info__list-item'>
+                                    <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/eco.svg' alt=''></i><span class='info-item__title-text'>Экомаршруты</span></h3>
+                                    <div class='info-item__descr'>
+                                        <p>Узнайте, как всё устроено на&nbsp;экофермах, заповедниках и&nbsp;в&nbsp;зоопарках, и&nbsp;купите традиционные сувениры и&nbsp;натуральные продукты там, где они изготовлены.</p>
+                                    </div>
+                                </div>
+                                <div class='info-item info__list-item'>
+                                    <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon_museum info-item__icon'><img src='images/info/museum@2x.png' alt=''></i><span class='info-item__title-text'>Экскурсии в музеи и мастерские</span></h3>
+                                    <div class='info-item__descr'>
+                                        <p>Посмотрите на&nbsp;шедевры живописи и&nbsp;декоративно-прикладного искусства в&nbsp;лучших музеях, художественных галереях и&nbsp;мастерских.</p>
+                                    </div>
+                                </div>
+                                <div class='info-item info__list-item'>
+                                    <div class='info-item__descr'>
+                                        <p>И&nbsp;еще более 30&nbsp;видов экскурсий на&nbsp;выбор.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='section__info-right'>
+                        <div js-polaroid class='section__polaroid polaroid'>
+                            <div class='polaroid__wrapper'>
+                                <div class='polaroid__frames'>
+                                    <div js-polaroid-frames-item class='polaroid__frames-item_active polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/4/6/6/4/0/466406e005c717805711fa8a8f2af298180c3565.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Калязин</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class='polaroid__frames-item_second polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/4/0/f/5/e/40f5e5537075c604ce8385bcf4a5126f6b67172f.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Болгар,  Татарстан</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class='polaroid__frames-item_third polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/e/4/3/7/8/e43783f3c811e35b453a9dbbd2eb27d81966ab60.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Остров Валаам, Ладожское озеро</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/3/c/b/1/c/3cb1c1c6a49f08b82f83ef36bcb341fd06ed8a05.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Кижи</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/a/2/a/6/5/a2a658550ed86d76482a783300c90ca5d44b2ff5.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Кижский погост</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/5/8/9/d/c/589dc3c0507bb6b7325f9c29a4e85b3e7c3c1b7c.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Кирилло-Белозерский монастырь, г.Кириллов</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/9/b/b/7/f/9bb7f87b892469b34beee9bf4a05f342369185a7.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Ферапонтов Белозерский монастырь, Кирилловский район</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/4/2/0/f/4/420f41ebe82eb41a914e0690f6332da687dcab83.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Кострома</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/f/a/b/0/2/fab02357c868d1c8c0683185a815536883325435.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Макарьев</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/7/a/6/d/1/7a6d1d16317ceba5bf2127acf6433a325ff1b00c.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Деревня Мандроги</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/f/d/b/c/c/fdbcc7f99e61044a289b45bbf7e0047505e2afb8.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Деревня Мандроги</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/d/6/a/9/7/d6a97a2b6b9fa2d97f3cbcbaff57e29db155838b.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Плёс</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/3/3/f/4/7/33f47a04fa630b2a320481ccd4c5e76bfa664830.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Калязин</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/e/4/c/0/2/e4c02dcdf5bac9bf5f730a10215f8cdba8158fef.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Рыбинск</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/e/e/3/8/5/ee38544e7d42a558fe3bf4741fbe912865611688.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Сортавала</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/f/a/9/d/7/fa9d7c7b5d0d26b51df9e8e412b8f433cc400943.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Казань</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/1/7/8/9/c/1789c64db266b7472c19a842f27696542c2c0f1a.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Экофермы</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/6/9/4/2/3/6942308d5d454089d65add282f56e8db0d85792f.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Канал имени Москвы</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/1/2/d/0/5/12d05bde5932b2cc0f98b50ad58943d6c3534fcc.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>Канал имени Москвы</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/4/7/6/d/3/476d30b514f053af440cf3826961b5c92f42c411.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Углич</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/1/2/8/2/2/12822272b4d7e6ba66403527121455248126808a.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Углич</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/7/c/6/0/0/7c600a374c347b7c44c10feaa90bfdcf850b345e.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Нижний Новгород</div>
+                                    </div>
+                                    <div js-polaroid-frames-item class=' polaroid__frames-item'>
+                                        <div class='polaroid__item'>
+                                            <img src='cache/d/a/c/5/5/dac553c65d18ee35a944ca3c1d664e81e22490cc.jpg?3' alt='' class='polaroid__item-img'>
+                                        </div>
+                                        <div class='polaroid__frames-item-title'>г.Санкт-Петербург</div>
+                                    </div>
+                                </div>
+                                <div class='polaroid__nav'>
+                                    <div js-polaroid-nav-prev class='polaroid__nav-prev'></div>
+                                    <div js-polaroid-nav-count class='polaroid__nav-count'>prev</div>
+                                    <div js-polaroid-nav-next class='polaroid__nav-next'></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div js-isinview data-scrollhash='entertainment' class='section_entertainment section block'>
+            <div class='section__wrapper block__wrapper'>
+                <div class='section__header'>
+                    <div js-kit-stacking class='section__kit_entertainment section__kit'>
+                        <div class='kit_vertical kit'>
+                            <div class='kit__list'>
+                                <div class='kit__list-wrapper'>
+                                    <div class='kit__list-item kit-item_type_plus kit-item'>
+                                        <div class='kit-item__icon'></div>
+                                    </div>
+                                    <div class='kit__list-item kit-item_type_entertainment kit-item'>
+                                        <div class='kit-item__icon'>
+                                            <img src='images/kit/entertainment.svg' alt=''>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class='section__title'>Развлечения</h2>
+                    <div class='section__texts'>
+                        <div class='section__texts-main'>
+                            <div class='section__descr'>
+                                <p>Занимайтесь на&nbsp;тренажёрах, читайте книги из&nbsp;нашей библиотеки, танцуйте, смотрите кино под звёздами, участвуйте в&nbsp;квестах и&nbsp;викторинах.</p>
+                            </div>
+                        </div>
+                        <div class='section__texts-side'>
+                            <div class='section__subtitle'><b>И&nbsp;всё это&nbsp;&mdash; <b>бесплатно</b></b></div>
+                        </div>
+                    </div>
+                </div>
+                <div class='section__info'>
+                    <div class='info'>
+                        <div class='info__list'>
+                            <div js-info-item-tooltip class='info-item info__list-item'>
+                                <h3 js-info-item-title class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/kids.svg' alt=''></i><span class='info-item__title-text'>Детский игровой клуб</span></h3>
+                            </div>
+                            <div js-info-item-tooltip class='info-item info__list-item'>
+                                <h3 js-info-item-title class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/fitness.svg' alt=''></i><span class='info-item__title-text'>Фитнес-зона</span></h3>
+                            </div>
+                            <div js-info-item-tooltip class='info-item info__list-item'>
+                                <h3 js-info-item-title class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/stars@2x.png' alt=''></i><span class='info-item__title-text'>Программа &laquo;Звёздное небо круизов&raquo;</span></h3>
+                                <div js-info-item-descr class='info-item__descr'>
+                                    <p>«Звёздное небо круизов» - это уникальная возможность в беседах с профессиональными астрономами, представителями корпорации «РОСКОСМОС» и настоящими космонавтами заглянуть за пределы нашей планеты, узнать больше о солнечной системе, научиться находить и читать созвездия. Этот эксклюзивный проект компании «Мостурфлот» интересен туристам всех возрастов.</p>
+                                </div>
+                            </div>
+                            <div js-info-item-tooltip class='info-item info__list-item'>
+                                <h3 js-info-item-title class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/disco.svg' alt=''></i><span class='info-item__title-text'>Диско-холл</span></h3>
+                            </div>
+                            <div js-info-item-tooltip class='info-item info__list-item'>
+                                <h3 js-info-item-title class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/film.svg' alt=''></i><span class='info-item__title-text'>Кинотеатр под открытым небом</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div js-isinview data-scrollhash='constructor' js-constructor class='constructor block'>
+        <div class='constructor__wrapper block__wrapper'>
+            <div class='constructor__header'>
+                <h2 class='constructor__title'>Конструктор путешествия</h2>
+                <div class='constructor__subtitle'>Выберите нужные опции и&nbsp;узнайте примерную стоимость вашего тура.*</div>
+            </div>
+            <div class='constructor-options constructor__options'>
+                <div class='constructor-options__list'>
+
+                    <!-- ships -->
+                    <form id="flotSU">
+                        <div class='constructor-option constructor-options__list-item'>
+                            <div class='constructor-option__type'>
+                                <div class='constructor-option__type-kit'>
+                                    <div class='kit-item_size_big kit-item_type_placement kit-item'>
+                                        <div class='kit-item__icon'>
+                                            <img src='images/kit/ship.svg' alt=''>
+                                        </div>
+                                        <div class='kit-item__title'>Теплоход</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='constructor-option__list'>
+
+                                <div class='constructor-option__list-item'>
+                                    <label class='constructor-option__variant radio'>
+                                        <input value='1' checked type='radio' name='ships' class='radio__input ship1'>
+                                        <span class='radio__fake'></span>
+                                        <span class='radio__text'>Н.Карамзин</span>
+                                    </label>
+                                </div>
+                                <div class='constructor-option__list-item'>
+                                    <label class='constructor-option__variant radio'>
+                                        <input value='2' type='radio' name='ships' class='radio__input ship2'>
+                                        <span class='radio__fake'></span>
+                                        <span class='radio__text'>И.А.Крылов</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- end ships -->
+
+
+                    <div class='constructor-option constructor-options__list-item'>
+                        <div class='constructor-option__type'>
+                            <div class='constructor-option__type-kit'>
+                                <div class='kit-item_size_big kit-item_type_path kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/path.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>маршрут</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='constructor-option__list'>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='3' checked js-constructor-option-input type='radio' name='constructor[time]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>3 дня</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='7' js-constructor-option-input type='radio' name='constructor[time]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>7 дней</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='13' js-constructor-option-input type='radio' name='constructor[time]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>13 дней</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='constructor-option constructor-options__list-item'>
+                        <div class='constructor-option__type'>
+                            <div class='constructor-option__type-kit'>
+                                <div class='kit-item_size_big kit-item_type_placement kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/placement.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>Размещение</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='constructor-option__list'>
+
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='2330' checked js-constructor-option-input type='radio' name='constructor[placement]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Стандарт</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='7000' js-constructor-option-input type='radio' name='constructor[placement]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Полулюкс</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='7500' js-constructor-option-input type='radio' name='constructor[placement]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Люкс</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='constructor-option constructor-options__list-item'>
+                        <div class='constructor-option__type'>
+                            <div class='constructor-option__type-kit'>
+                                <div class='kit-item_size_big kit-item_type_food kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/food@2x.png' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>Питание</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='constructor-option__list'>
+                            <div class='constructor-option__list-item zero-meal'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='0' checked js-constructor-option-input type='radio' name='constructor[food]' class='radio__input food-none'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Без питания</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='150' js-constructor-option-input type='radio' name='constructor[food]' class='radio__input food-one'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Завтрак</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='450' js-constructor-option-input type='radio' name='constructor[food]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Полупансион</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='850' js-constructor-option-input type='radio' name='constructor[food]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Полный пансион</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='constructor-option constructor-options__list-item'>
+                        <div class='constructor-option__type'>
+                            <div class='constructor-option__type-kit'>
+                                <div class='kit-item_size_big kit-item_type_excursion kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/excursion.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>Экскурсии</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='constructor-option__list'>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='0' js-constructor-option-input type='radio' name='constructor[excursion]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Без экскурский</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input checked value='150' js-constructor-option-input type='radio' name='constructor[excursion]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Выборочно</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='300' js-constructor-option-input type='radio' name='constructor[excursion]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>Все экскурсии</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='constructor-option constructor-options__list-item' style="display:none">
+                        <div class='constructor-option__type'>
+                            <div class='constructor-option__type-kit'>
+                                <div class='kit-item_size_big kit-item_type_entertainment kit-item'>
+                                    <div class='kit-item__icon'>
+                                        <img src='images/kit/entertainment.svg' alt=''>
+                                    </div>
+                                    <div class='kit-item__title'>Развлечения</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='constructor-option__list'>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='0' checked js-constructor-option-input type='radio' name='constructor[entertainment]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>На борту бесплатно!</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='constructor-options__actions'>
+                    <div class='constructor-options__actions-left'>
+                        <div class='constructor-options__actions-book'>
+                            <div class='constructor-book'>
+                                <h3 class='constructor-book__title'>Забронировать</h3>
+                                <div class='constructor-book__descr'>
+                                    <p>Чтобы забронировать тур самостоятельно, перейдите на&nbsp;основной сайт. Там вы&nbsp;можете ознакомиться с&nbsp;описанием туров и&nbsp;выбрать любые услуги.</p>
+                                </div>
+                                <div class='constructor-book__actions'>
+                                    <a class='constructor-book__action button_bd-opacity_30 button' href='https://www.mosturflot.ru/rivercruises?ships=Карамзин,Крылов'><span>ПЕРЕЙТИ К БРОНИРОВАНИЮ</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='constructor-options__actions-right'>
+                        <div class='constructor-options__actions-buy'>
+                            <div class='constructor-buy'>
+                                <h3 class='constructor-buy__title'>*Стоимость тура от <span class='constructor-buy__title-price constructor-buy__price' js-constructor-price><b class='constructor-buy__price-sum'><span class='constructor-buy__price-current'>12500</span><span class='constructor-buy__price-new'>12500</span></b> РУБ</span></h3>
+                                <div class='constructor-buy__actions'>
+                                    <div class='constructor-buy__actions-row'>
+                                        <button js-open-reg class='constructor-buy__action button_bd-opacity_30 button_medium button_green button'><span>ПОЛУЧИТЬ СКИДКУ 3%</span></button>
+                                        <div class='constructor-buy__action-descr'>Скидка не&nbsp;суммируется с&nbsp;картой постоянного покупателя</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='section block'>
+        <div class='section__wrapper block__wrapper'>
+            <table id="rivercruises" class="display compact" cellspacing="0" width="100%" style="padding-top:60px;">
+                <thead>
+                <tr>
+                    <th>Год</th>
+                    <th>Теплоход</th>
+                    <th>Дней</th>
+                    <th>Отход</th>
+                    <th>Прибытие</th>
+                    <th>Маршрут</th>
+                    <th nowrap="nowrap">Цена от</th>
+                    <th>Каюты</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+
+    <div class='display-none'>
+        <div class='modal_reg modal'>
+            <div class='modal__title'>Пора пароходить!</div>
+            <div class='modal__content'>
+                <form novalidate action='https://script.google.com/macros/s/AKfycbx-ZFAX5-GvcORUHKHeTmgqYnpfWxOj3lzLjzxFzvn5jfQqINRW/exec' method="post" autocomplete="off" class='reg-form'>
+                    <div class='reg-form__descr'>
+                        <p>Отправь контакты и получи скидку 3%!</p>
+                    </div>
+                    <div class='reg-form__fields'>
+                        <label class='input'>
+                            <span class='input__label'>Имя и фамилия</span>
+                            <span class='input__field'>
+                            <input type='text' id='name' name='name' placeholder='' class='input__field-self'>
+                        </span>
+                        </label>
+                        <label class='input'>
+                            <span class='input__label'>Контактный телефон</span>
+                            <span class='input__field'>
+                            <input type='tel' id='phone' name='phone' placeholder='' class='input__field-self'>
+                        </span>
+                        </label>
+                        <label class='input'>
+                            <span class='input__label'>E-mail</span>
+                            <span class='input__field'>
+                            <input type='email' id='email' name='email' placeholder='' class='input__field-self'>
+                        </span>
+                        </label>
+                        <label class='checkbox'>
+                            <input checked type='checkbox' id='subscription' name='subscription' class='checkbox__input'>
+                            <span class='checkbox__fake'></span>
+                            <span class='checkbox__text'>Согласен получать рассылку</span>
+                        </label>
+                    </div>
+                    <div class='reg-form__actions'>
+                        <input type='tel' name='mobile' id='mobile' placeholder='' class='display-none'>
+
+                        <button type='submit' class='reg-form__action button_bd-opacity_30 button_medium button_green button'><span>ОТПРАВИТЬ</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class='footer block'>
+        <div class='footer__wrapper block__wrapper'>
+            <div class='footer__cols'>
+                <div class='footer__cols-left'>
+                    <div class='footer__copyright'>© 2018 Мостурфлот</div>
+                </div>
+                <div class='footer__cols-center'>
+                    <div class='footer__contacts'>
+                        <div class='contacts'>
+                            <div class='contacts__list'>
+                                <div class='contacts__item contacts__list-item'>
+                                    <a href='tel:+7 (495) 22-17-222' class='contacts__link_icon_phone contacts__link_icon contacts__link'><u>+7 (495) 22-17-222</u></a>
+                                </div>
+                                <div class='contacts__item contacts__list-item'>
+                                    <a href='mailto:info@mosturflot.ru' class='contacts__link_icon_email contacts__link_icon contacts__link'><u>info@mosturflot.ru</u></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='footer__cols-right'>
+                    <a class='' href='https://www.mosturflot.ru'>
+                        <span class='footer-wow__text'>ОАО"МОСТУРФЛОТ"</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+
