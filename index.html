@@ -1105,7 +1105,7 @@
     <div class='modal_reg modal'>
         <div class='modal__title'>Пора пароходить!</div>
         <div class='modal__content'>
-            <form novalidate action='https://script.google.com/macros/s/AKfycbx-ZFAX5-GvcORUHKHeTmgqYnpfWxOj3lzLjzxFzvn5jfQqINRW/exec' method="post" autocomplete="off" class='reg-form'>
+            <form novalidate autocomplete="off" class='reg-form'>
                 <div class='reg-form__descr'>
                     <p>Отправь контакты и получи скидку 3%!</p>
                 </div>
@@ -1113,7 +1113,7 @@
                     <label class='input'>
                         <span class='input__label'>Имя и фамилия</span>
                         <span class='input__field'>
-                            <input type='text' id='name' name='name' placeholder='' class='input__field-self'>
+                            <input type='text' id='name' name='name' placeholder='' value="" class='input__field-self'>
                         </span>
                     </label>
                     <label class='input'>
@@ -1135,9 +1135,10 @@
                     </label>
                 </div>
                 <div class='reg-form__actions'>
-                	<input type='tel' name='mobile' id='mobile' placeholder='' class='display-none'>
+                	<input type='tel' name='mobile' id='mobile' placeholder='' autocomplete="new-password" class='display-none'>
                 	
-                    <button type='submit' class='reg-form__action button_bd-opacity_30 button_medium button_green button'><span>ОТПРАВИТЬ</span></button>
+                    <button class='reg-form__action button_bd-opacity_30 button_medium button_green button'><span>ОТПРАВИТЬ</span></button>
+                    <div class="reply_message"></div>
                 </div>
             </form>
         </div>

@@ -142,21 +142,31 @@ function compare(a,b) {
 
 (function($){
     $(document).ready(function() {
+        $(document).on("click", ".reg-form__action", function(event){
+            event.preventDefault();
+            $(this).prop('disabled', true);
+            var name = encodeURIComponent($(this).parent().parent().find("#name").val());
+            console.log(name);
+            var email = $(this).parent().parent().find("#email");
+            var mysubject = $(this).parent().parent().find("#subscription");
+            var phone = $(this).parent().parent().find("#phone");
+            var mobile = $(this).parent().parent().find("#mobile");
+            var dataString = 'name='+ name + '&email=' + email.val() + '&subscription='+ mysubject.val() + '&mobile=' + mobile.val() + '&phone=' + phone.val();
+            console.log(dataString);
+            $.ajax({
+                type: 'post',
+                url: 'https://script.google.com/macros/s/AKfycbx-ZFAX5-GvcORUHKHeTmgqYnpfWxOj3lzLjzxFzvn5jfQqINRW/exec',
+                data: dataString,
+                success: function(data) {
+                    console.log(data);
+                    alert("Заявка отправлена");
+                }
+            });
+        });
+
+
         moment.locale('ru');
         $.fn.dataTable.moment( 'DD MMM H:mm' );
-
-        //$('input[name="ships"]').on('change', function(){
-           // var ship_selected = parseFloat(this.value);
-            //var placement_price = parseInt($('input[name="constructor[placement]"]').val());
-            //$('#standard').val(2330*ship_selected).change();
-            //$('#halflux').val(7000*ship_selected).change();
-            //$('#lux').val(7500*ship_selected).change();
-            //console.log(placement_price*ship_selected);
-        //});
-
-
-
-
         /*** all cruises **/
         var rivercruises = $('#rivercruises').DataTable( {
             "dom": 'rt<"clear">',
