@@ -2,7 +2,7 @@
 //var ajax_url = ajax_tours;
 let d = new Date();
 let current_date = d.toISOString().substring(0, 10);
-let l_url = 'https://api.mosturflot.ru/v3/rivercruises/tours?fields[tours]=ship-id,route,start,finish,days,price-from,price-from-discount,is-special-offer,start-point,end-point,max-discount,is-online-sale,is-foreigner,is-holiday,direction-id,is-own,discount-expire,start-point,finish-point&include=ship,ship-title-image,direction&fields[ships]=name,class-id,sort-order,is-own&filter[start][gte]=' + current_date + 'T00:00:00Z&per-page=20&filter[ship-id]=19';
+let l_url = 'https://api.mosturflot.ru/v3/rivercruises/tours?fields[tours]=ship-id,route,start,finish,days,price-from,price-from-discount,is-special-offer,start-point,end-point,max-discount,is-online-sale,is-foreigner,is-holiday,direction-id,is-own,discount-expire,start-point,finish-point&include=ship,ship-title-image,direction&fields[ships]=name,class-id,sort-order,is-own&filter[start][gte]=' + current_date + 'T00:00:00Z&per-page=100&&filter[ship-id][in][]=19&filter[ship-id][in][]=72&filter[ship-id][in][]=91';
 const mtfShipsArray = {
     "5": 'Сергей Образцов',
     "14": 'Василий Суриков',
@@ -169,7 +169,7 @@ function compare(a,b) {
         $.fn.dataTable.moment( 'DD MMM H:mm' );
         /*** all cruises **/
         var rivercruises = $('#rivercruises').DataTable( {
-            "dom": 'rt<"clear">',
+            "dom": 'rt<"clear">p',
             "responsive": "true",
             "ajax": {
                 "url": l_url,
@@ -178,7 +178,7 @@ function compare(a,b) {
                     var data = [];
                     for(var key in json.data){
                         //if(json.attributes.hasOwnProperty(key)){
-                        json.data[key].attributes.shipname = 'Леонид Красин';
+                        json.data[key].attributes.shipname = mtfShipsArray[json.data[key].attributes['ship-id']];
                         json.data[key].attributes.tourid = json.data[key].id;
                             json.data[key].attributes.year = moment(json.data[key].attributes.start, moment.ISO_8601).format('YYYY');
                             json.data[key].attributes.cruisestart = moment(json.data[key].attributes.start, moment.ISO_8601).format('YYYY <br>DD MMM <i>H:mm</i>,<br> dddd');
@@ -254,3 +254,4 @@ function compare(a,b) {
 
     } );
 })(jQuery);
+``
