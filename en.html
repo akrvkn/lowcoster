@@ -21,20 +21,70 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="favicon-144-precomposed.png">
 
-    <title>Конструктор речных круизов</title>
+    <title>Designer of river cruises</title>
 
     <link rel='stylesheet' href='css/vendor.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i|Roboto:400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic'>
-    <link rel='stylesheet' href='css/common.css'>
-    <link rel='stylesheet' href='css/custom.css'>
+    <link rel='stylesheet' href='css/common.css?v=1.0.1'>
+    <link rel='stylesheet' href='css/custom.css?v=1.0.1'>
     <link rel='stylesheet' href='js/DataTables-1.10.16/css/jquery.dataTables.css'>
+
+    <!-- Yandex.Metrika counter -->
+
+    <script type="text/javascript" >
+
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+
+
+        ym(144582, "init", {
+
+            clickmap:true,
+
+            trackLinks:true,
+
+            accurateTrackBounce:true,
+
+            webvisor:true,
+
+            ecommerce:"dataLayer"
+
+        });
+
+    </script>
+
+    <noscript><div><img src="https://mc.yandex.ru/watch/144582" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+    <!-- /Yandex.Metrika counter -->
+    <script type="text/javascript">
+        window.addEventListener("load", function(event) {
+            setTimeout(ym(144582,'reachGoal','settime'), 120000);
+        });
+    </script>
+    <script type="text/javascript">
+
+        (function ct_load_script() {
+
+            var ct = document.createElement('script'); ct.type = 'text/javascript';
+
+            ct.src = document.location.protocol+'//cc.calltracking.ru/phone.016d9.9989.async.js?nc='+Math.floor(new Date().getTime()/300000);
+
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct, s);
+
+        })();
+
+    </script>
 
     <script src='js/moment-with-locales.min.js'></script>
     <script src='js/vendor.js'></script>
     <script src='js/lib.js'></script>
     <script src='js/common.js'></script>
     <script src='js/DataTables-1.10.16/js/jquery.dataTables.js'></script>
-    <script src='js/rivercruises.js'></script>
+    <script src='js/rivercruises-eng.js?v=1.0.2'></script>
 </head>
 <body class='body'>
 <div class='body__wrapper'>
@@ -456,11 +506,11 @@
                     <div class='section__texts'>
                         <div class='section__texts-main'>
                             <div class='section__descr'>
-                                <p>Choose one of the two cruise ships – <i>Nikolay Karamzin</i> or <i>Ivan Krylov</i> and then pick up the best cabin type.</p>
+                                <p>Choose one of the three cruise ships – <i>A.S.Pushkin</i>, <br><i>Rnyazhna Anastasiya</i> or <i>Leonid Krasin</i><br> and then pick up the best cabin type.</p>
                             </div>
                         </div>
                         <div class='section__texts-side'>
-                            <div class='section__subtitle'>Accommodations starting <br><b>at 2330 rubles per day</b></div>
+                            <div class='section__subtitle'><p>Accommodations starting <br><b>at 2600 rubles per day</b></p><br></div>
                         </div>
                     </div>
                 </div>
@@ -470,7 +520,7 @@
                             <div class='info-item info__list-item'>
                                 <h3 class='info-item__title'><i class='info-item__title-icon info-item__icon'><img src='images/info/circle-yellow.svg' alt=''></i><span class='info-item__title-text'>Standard</span></h3>
                                 <div js-info-item-descr class='info-item__descr'>
-                                    <p>1-, 2-, 3- and 4-berth cabinswith single beds, a refrigerator*, a TV set and a hairdryer<br><hr>*Except for several cabins at Ivan Krylov cruise ship</p>
+                                    <p>1-, 2-, 3- and 4-berth cabinswith single beds, a refrigerator*, a TV set and a hairdryer</p>
                                 </div>
                             </div>
                             <div class='info-item info__list-item'>
@@ -518,7 +568,7 @@
                             </div>
                         </div>
                         <div class='section__texts-side'>
-                            <div class='section__subtitle'>Coffee as low as <b>120 rubles</b> at the <b>bar</b>.</div>
+                            <!--<div class='section__subtitle'>Coffee as low as <b>120 rubles</b> at the <b>bar</b>.</div>-->
                         </div>
                     </div>
                 </div>
@@ -863,14 +913,21 @@
                                     <label class='constructor-option__variant radio'>
                                         <input value='1' checked type='radio' name='ships' class='radio__input ship1'>
                                         <span class='radio__fake'></span>
-                                        <span class='radio__text'>Nikolay Karamzin</span>
+                                        <span class='radio__text'>A.S.Pushkin</span>
                                     </label>
                                 </div>
                                 <div class='constructor-option__list-item'>
                                     <label class='constructor-option__variant radio'>
-                                        <input value='2' type='radio' name='ships' class='radio__input ship2'>
+                                        <input value='1' type='radio' name='ships' class='radio__input ship2'>
                                         <span class='radio__fake'></span>
-                                        <span class='radio__text'>Ivan Krylov</span>
+                                        <span class='radio__text'>Knyazhna Anastasiya</span>
+                                    </label>
+                                </div>
+                                <div class='constructor-option__list-item'>
+                                    <label class='constructor-option__variant radio'>
+                                        <input value='1' type='radio' name='ships' class='radio__input ship2'>
+                                        <span class='radio__fake'></span>
+                                        <span class='radio__text'>Leonid Krasin</span>
                                     </label>
                                 </div>
                             </div>
@@ -896,6 +953,13 @@
                                     <input value='3' checked js-constructor-option-input type='radio' name='constructor[time]' class='radio__input'>
                                     <span class='radio__fake'></span>
                                     <span class='radio__text'>3 days</span>
+                                </label>
+                            </div>
+                            <div class='constructor-option__list-item'>
+                                <label class='constructor-option__variant radio'>
+                                    <input value='6' js-constructor-option-input type='radio' name='constructor[time]' class='radio__input'>
+                                    <span class='radio__fake'></span>
+                                    <span class='radio__text'>6 days</span>
                                 </label>
                             </div>
                             <div class='constructor-option__list-item'>
@@ -929,21 +993,21 @@
 
                             <div class='constructor-option__list-item'>
                                 <label class='constructor-option__variant radio'>
-                                    <input value='2330' checked js-constructor-option-input type='radio' name='constructor[placement]' class='radio__input'>
+                                    <input value='2500' checked js-constructor-option-input type='radio' name='constructor[placement]' class='radio__input'>
                                     <span class='radio__fake'></span>
                                     <span class='radio__text'>Standard</span>
                                 </label>
                             </div>
+<!--                            <div class='constructor-option__list-item'>-->
+<!--                                <label class='constructor-option__variant radio'>-->
+<!--                                    <input value='7000' js-constructor-option-input type='radio' name='constructor[placement]' class='radio__input'>-->
+<!--                                    <span class='radio__fake'></span>-->
+<!--                                    <span class='radio__text'>Semi-Suites</span>-->
+<!--                                </label>-->
+<!--                            </div>-->
                             <div class='constructor-option__list-item'>
                                 <label class='constructor-option__variant radio'>
-                                    <input value='7000' js-constructor-option-input type='radio' name='constructor[placement]' class='radio__input'>
-                                    <span class='radio__fake'></span>
-                                    <span class='radio__text'>Semi-Suites</span>
-                                </label>
-                            </div>
-                            <div class='constructor-option__list-item'>
-                                <label class='constructor-option__variant radio'>
-                                    <input value='7500' js-constructor-option-input type='radio' name='constructor[placement]' class='radio__input'>
+                                    <input value='11200' js-constructor-option-input type='radio' name='constructor[placement]' class='radio__input'>
                                     <span class='radio__fake'></span>
                                     <span class='radio__text'>Suites</span>
                                 </label>
@@ -962,30 +1026,30 @@
                             </div>
                         </div>
                         <div class='constructor-option__list'>
-                            <div class='constructor-option__list-item zero-meal'>
-                                <label class='constructor-option__variant radio'>
-                                    <input value='0' checked js-constructor-option-input type='radio' name='constructor[food]' class='radio__input food-none'>
-                                    <span class='radio__fake'></span>
-                                    <span class='radio__text'>No meals</span>
-                                </label>
-                            </div>
+<!--                            <div class='constructor-option__list-item zero-meal'>-->
+<!--                                <label class='constructor-option__variant radio'>-->
+<!--                                    <input value='0' checked js-constructor-option-input type='radio' name='constructor[food]' class='radio__input food-none'>-->
+<!--                                    <span class='radio__fake'></span>-->
+<!--                                    <span class='radio__text'>No meals</span>-->
+<!--                                </label>-->
+<!--                            </div>-->
                             <div class='constructor-option__list-item'>
                                 <label class='constructor-option__variant radio'>
-                                    <input value='150' js-constructor-option-input type='radio' name='constructor[food]' class='radio__input food-one'>
+                                    <input value='0' checked js-constructor-option-input type='radio' name='constructor[food]' class='radio__input food-one'>
                                     <span class='radio__fake'></span>
                                     <span class='radio__text'>Breakfast</span>
                                 </label>
                             </div>
                             <div class='constructor-option__list-item'>
                                 <label class='constructor-option__variant radio'>
-                                    <input value='450' js-constructor-option-input type='radio' name='constructor[food]' class='radio__input'>
+                                    <input value='500' js-constructor-option-input type='radio' name='constructor[food]' class='radio__input'>
                                     <span class='radio__fake'></span>
                                     <span class='radio__text'>Half Board</span>
                                 </label>
                             </div>
                             <div class='constructor-option__list-item'>
                                 <label class='constructor-option__variant radio'>
-                                    <input value='850' js-constructor-option-input type='radio' name='constructor[food]' class='radio__input'>
+                                    <input value='1000' js-constructor-option-input type='radio' name='constructor[food]' class='radio__input'>
                                     <span class='radio__fake'></span>
                                     <span class='radio__text'>Full Board</span>
                                 </label>
@@ -1011,16 +1075,16 @@
                                     <span class='radio__text'>No excursions</span>
                                 </label>
                             </div>
+<!--                            <div class='constructor-option__list-item'>-->
+<!--                                <label class='constructor-option__variant radio'>-->
+<!--                                    <input checked value='150' js-constructor-option-input type='radio' name='constructor[excursion]' class='radio__input'>-->
+<!--                                    <span class='radio__fake'></span>-->
+<!--                                    <span class='radio__text'>Selected excursions</span>-->
+<!--                                </label>-->
+<!--                            </div>-->
                             <div class='constructor-option__list-item'>
                                 <label class='constructor-option__variant radio'>
-                                    <input checked value='150' js-constructor-option-input type='radio' name='constructor[excursion]' class='radio__input'>
-                                    <span class='radio__fake'></span>
-                                    <span class='radio__text'>Selected excursions</span>
-                                </label>
-                            </div>
-                            <div class='constructor-option__list-item'>
-                                <label class='constructor-option__variant radio'>
-                                    <input value='300' js-constructor-option-input type='radio' name='constructor[excursion]' class='radio__input'>
+                                    <input value='400' js-constructor-option-input type='radio' name='constructor[excursion]' class='radio__input'>
                                     <span class='radio__fake'></span>
                                     <span class='radio__text'>Full excursions package</span>
                                 </label>
@@ -1059,7 +1123,28 @@
             </div>
         </div>
     </div>
-
+    <div class='section block'>
+        <div class='section__wrapper block__wrapper'>
+            <div class='section__header' style="padding-top: 60px">
+                <h2 class='section__title'>Cruise schedule</h2>
+            </div>
+            <div style="overflow-x: auto; min-width: 350px;">
+                <table id="rivercruises" class="display compact" cellspacing="0" width="100%" style="padding-top:60px;">
+                    <thead>
+                    <tr>
+                        <th>Год</th>
+                        <th>Ship</th>
+                        <th>Days</th>
+                        <th width="100">Departure</th>
+                        <th width="100">Arrival</th>
+                        <th>Route</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
 
     <div class='display-none'>
         <div class='modal_reg modal'>
